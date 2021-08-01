@@ -1,11 +1,12 @@
 import json
+import os
 import time
 
 import requests
 
 data = {}
 
-url = 'http://178.154.226.216/api/ingredients/'
+url = os.environ['URL_SERVER']
 headers = {
     'Content-Type': 'application/json'
 }
